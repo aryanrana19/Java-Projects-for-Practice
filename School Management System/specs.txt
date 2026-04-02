@@ -1,0 +1,32 @@
+Create - School Management System
+ - Students
+ - Teachers
+ - funds
+
+Money Management System for School
+
+=== Keep track of students total fees ===
+ - Fees already paid
+ - Teachers Salary
+
+=== SCHOOL ===
+ - Teachers
+ - Students
+ - Total Money Earned
+ - Total Money Spent -> Teachers Salary
+
+
+=== Teacher ===
+Characteristics of a teacher:
+ - id
+ - Name
+ - Salary
+
+=== Student ===
+Characteristics of student:
+ - id
+ - Name
+ - Grade
+ - Fees paid
+ - Total Fees
+
