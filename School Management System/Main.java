@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Teacher Poonam = new Teacher(1, "Poonam", 10000);
@@ -22,18 +23,18 @@ public class Main {
         School SOCS = new School(teachersList, studentsList);
 
         
-        Aryan.payFees(5000);
+        Aryan.payFees(5000);    
         Radhey.payFees(10000);
         System.out.println("Fees Paid by Aryan: " + Aryan.getFeesPaid());
         System.out.println("Fees Paid by Radhey: " + Radhey.getFeesPaid());
         System.out.println("SOCS has earned: " + SOCS.getTotalMoneyEarned());
 
         System.out.println("====== MAKING SOCS PAY SALARY ======");
-
-        
-
-        
-
+        Poonam.recieveSalary();
+        Mukesh.recieveSalary();
+        System.out.println("Poonam Salary: " + Poonam.getSalary());
+        System.out.println("Mukesh Salary: " + Mukesh.getSalary());
+        System.out.println("Total Money Spent by SOCS: " + SOCS.getTotalMoneySpent());
 
     }
 }
