@@ -25,8 +25,9 @@ public class Student{
 
     // UPDATE FEES PAID
     // ADD THE FEES TO "FEES PAID"
-    public void setFeesPaid(int fees){
+    public void payFees(int fees){
         feesPaid += fees;
+        School.updateTotalMoneyEarned(fees);
     }
 
     // GET ID
@@ -54,6 +55,10 @@ public class Student{
         return feesTotal;
     }
 
+    // RETURN THE REMAINING FEES
+    public int getRemainingFees(){
+        return feesTotal -= feesPaid;
+    }
 
 
 }

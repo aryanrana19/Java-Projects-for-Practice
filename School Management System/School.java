@@ -7,8 +7,8 @@ public class School {
     
     private ArrayList<Teacher> teachers;
     private ArrayList<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
     // NEW SCHOOL OBJECT IS CREATED
     public School(ArrayList<Teacher> teachers, ArrayList<Student> students){
@@ -49,12 +49,12 @@ public class School {
     }
 
     // UPDATE TOTAL MONEY EARNED
-    public void updateTotalMoneyEarned(int moneyEarned){
+    public static void updateTotalMoneyEarned(int moneyEarned){
         totalMoneyEarned += moneyEarned;
     }
 
     // UPDATE TOTAL MONEY SPENT
-    public void updateTotalMoneySpent(int moneySpent){
+    public static void updateTotalMoneySpent(int moneySpent){
         totalMoneyEarned -= moneySpent;
     }
 
