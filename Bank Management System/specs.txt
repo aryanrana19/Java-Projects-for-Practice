@@ -1,0 +1,51 @@
+BANK MANAGEMENT SYSTEM
+ - Be able to deposit money
+ - Withdraw money
+ - check account status (Money)
+
+
+BANK
+ - Create account
+ - Find Account
+ - Show customers
+ - Find customers
+ - create customers
+
+CUSTOMER
+ - ID
+ - Name
+ - List of accounts
+ 
+ METHODS -
+  addAccount()
+  getAccounts()
+  displayCustomerDetails()
+
+Abstract Account Class
+ - accountId
+ - balance 
+ - Customer Owner
+ -- Methods
+  - deposit()
+  - abstract withdraw()
+  - checkBalance()
+  - transfer(account target, amount)
+
+ACCOUNT
+ - accountId
+ - balance 
+ - Transfer Money
+ - accountType - Savings, Current
+ - Client Owner
+
+ - Methods 
+   - deposit
+   - withdraw 
+   - checkBalance
+
+ - Child Classes -> Savings Account, Current Account
+    -> SAVINGS ACCOUNT -
+        - Interest Rate
+        - minimumBalance
+    -> Current Account
+        - overdraft Limit
